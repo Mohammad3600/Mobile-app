@@ -1,12 +1,10 @@
 import React from "react";
 import { makeStyles } from "@mui/styles";
 import PropTypes from 'prop-types';
-import { Typography } from "@mui/material";
-import SchoolIcon from '@mui/icons-material/School';
 import { IonContent } from '@ionic/react';
 import { useLocation } from "react-router";
 import { appURLS } from "../constants";
-import MenuIcon from '@mui/icons-material/Menu';
+import Sidebar from "./Sidebar";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -26,8 +24,8 @@ const useStyles = makeStyles((theme) => ({
   },
   circle1: {
     position: "absolute",
-    height: "10rem",
-    width: "10rem",
+    height: "12rem",
+    width: "12rem",
     left: "-3rem",
     top: "-2rem",
     background: theme.palette.secondary.main,
@@ -35,21 +33,15 @@ const useStyles = makeStyles((theme) => ({
   },
   circle2: {
     position: "absolute",
-    height: "12rem",
-    width: "12rem",
+    height: "14rem",
+    width: "18rem",
     left: "0",
     top: "-7rem",
     background: theme.palette.secondary.main,
     borderRadius: "50%",
     mixBlendMode: "multiply"
   },
-  menuIcon: {
-    position: "absolute",
-    zIndex: 1000,
-    left: "1rem",
-    top: "1rem",
-    cursor: "pointer"
-  },
+  
   children: {
     position: "relative",
     top: "6%"
@@ -65,7 +57,7 @@ const Layout = (props) => {
     <div className={classes.circle1}  />
     <div className={classes.circle2}   />
     {
-      currentPath !== appURLS.LOGIN ? <MenuIcon style={{fontSize: "2.5rem"}} className={classes.menuIcon} /> : null
+      currentPath !== appURLS.LOGIN ? <Sidebar /> : null
     }
     <div className={classes.children}>
       {props.children}

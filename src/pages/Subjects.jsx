@@ -1,13 +1,9 @@
 import React from "react";
-import mathematics from "../assets/mathematics.png";
-import chemistry from "../assets/chemistry.png";
-import physics from "../assets/physics.png";
-import biology from "../assets/biology.png";
 import { Grid } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import {Typography} from "@mui/material";
 import { useHistory } from 'react-router-dom';
-import {appURLS} from "../constants";
+import { appURLS, availableSubjects} from "../constants";
 
 const useStyles = makeStyles({
   card: {
@@ -37,36 +33,14 @@ const useStyles = makeStyles({
   }
 });
 
-const availableSubjects = [
-      {
-        icon: chemistry,
-        SubjectName: "Chemistry",
-        redirection: appURLS.CHEMISTRY
-    },
-    {
-        icon: mathematics,
-        SubjectName: "Mathematics",
-        redirection: appURLS.MATHEMATICS
-    },
-    {
-        icon: physics,
-        SubjectName: "Physics",
-        redirection: appURLS.PHYSICS
-    },
-    {
-      icon: biology,
-      SubjectName: "Biology",
-      redirection: appURLS.CHEMISTRY
-    }
-    
-]
+
 
 const Subjects = () => {
   const classes = useStyles();
   const history = useHistory();
 
   const onSubjectClick = (path) => {
-    history.push(path);
+    history.push(`${appURLS.COURSE}${path}`);
   };
 
   return (

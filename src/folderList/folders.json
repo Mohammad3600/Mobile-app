@@ -1,0 +1,40 @@
+{
+  "biology": [],
+  "chemistry": [
+    {
+      "name": "Chemical Bonding",
+      "files": [
+        "Explain the shape of BRf5",
+        "What is chemical bonding",
+        "What is Octate rule"
+      ]
+    },
+    {
+      "name": "Structure of atom",
+      "files": [
+        "GIVE THE NUMBER OF ELECTRONS IN  H2+",
+        "What is Mass Number",
+        "WHAT IS MILIKAN’S EXPERIMENT"
+      ]
+    }
+  ],
+  "mathematics": [
+    {
+      "name": "Integrations",
+      "files": [
+        "GIVE THE NUMBER OF ELECTRONS IN  H2+",
+        "What is Mass Number",
+        "WHAT IS MILIKAN’S EXPERIMENT"
+      ]
+    },
+    {
+      "name": "Propability",
+      "files": [
+        "Explain the shape of BRf5",
+        "What is chemical bonding",
+        "What is Octate rule"
+      ]
+    }
+  ],
+  "physics": []
+}

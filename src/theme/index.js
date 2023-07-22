@@ -12,10 +12,10 @@ const theme = createTheme({
       main: '#ff0000', // Custom error color
     },
     warning: {
-      main: '#ff9800', // Custom warning color
+      main: '#F82020', // Custom warning color
     },
     info: {
-      main: '#2196f3', // Custom info color
+      main: '#6B68FA', // Custom info color
     },
     success: {
       main: '#4caf50', // Custom success color
@@ -48,10 +48,12 @@ const theme = createTheme({
       textTransform: "capitalize",
       cursor: "pointer"
     },
-    // body1:{
-    //   color: "#F15858",
-    //   fontSize: "1.5rem"
-    // }
+    body1:{
+      textTransform: "uppercase"
+    },
+    h6: {
+      fontWeight: 600
+    }
   },
   
   components: {

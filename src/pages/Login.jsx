@@ -33,16 +33,15 @@ const Login = () => {
       </Grid>
       <Grid item xs={12} md={6} lg={4} >
         <FormControl variant="outlined" sx={{minWidth: "18rem"}}>
-          <InputLabel>Email</InputLabel>
           <FilledInput
             type={"text"}
             label="Email"
+            placeholder="Email"
           />
         </FormControl>
       </Grid>
       <Grid item xs={12} md={6} lg={4} >
         <FormControl variant="outlined" sx={{minWidth: "18rem"}}>
-          <InputLabel>Password</InputLabel>
           <FilledInput
             id="outlined-adornment-password"
             type={showPassword ? "text" : "password"}
@@ -54,6 +53,7 @@ const Login = () => {
               </InputAdornment>
             }
             label="Password"
+            placeholder="Password"
           />
         </FormControl>
       </Grid>

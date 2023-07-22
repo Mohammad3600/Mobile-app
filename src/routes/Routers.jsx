@@ -3,8 +3,8 @@ import { Redirect, Route, Switch } from 'react-router'
 import { appURLS } from '../constants'
 import Login from '../pages/Login'
 import Subjects from '../pages/Subjects'
-import Chemistry from '../pages/Chemistry'
 import PlayVideo from "../pages/PlayVideo"
+import ConceptsList from '../pages/ConceptsList'
 
 const Routers = () => {
   return (
@@ -15,13 +15,13 @@ const Routers = () => {
             <Route path={appURLS.SUBJECTS}>
                 <Subjects />
             </Route>
-            <Route path={appURLS.CHEMISTRY} exact>
-                <Chemistry />
+            <Route path={`${appURLS.COURSE}/:subject`} exact>
+                <ConceptsList />
             </Route>
             <Route path={`${appURLS.PLAY}`} exact>
                 <PlayVideo />
             </Route>
-            <Route exact path="/">
+            <Route exact path="*">
                 <Redirect to={appURLS.LOGIN} />
             </Route>
         </Switch>
