@@ -4,7 +4,7 @@ import React,{useState} from "react";
 import { Grid, Typography } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import profile from '../assets/profile.png';
-import { useLocation } from "react-router";
+import { useHistory, useLocation } from "react-router";
 
 const useStyles = makeStyles((theme) => ({
     background: {
@@ -87,6 +87,12 @@ const Sidebar = () => {
     const [open, setOpen] = useState(false);
     const openPopup = () => setOpen(true);
     const closePopup = () => setOpen(false);
+    const history = useHistory();
+
+    const handleRouteChange = (e, path) => {
+        e.preventDefault();
+        history.push(path);
+    }
 
     return <> <div className={`${classes.background} ${open ? classes.visible : ""}`} onClick={closePopup}>
             <div className={`${classes.sideBar} ${open ? classes.openSideBar : ""}`}>   
@@ -100,7 +106,7 @@ const Sidebar = () => {
                 </div>
                 <div className={classes.menuItems}>
                     {
-                        menuItems.map((item) => <Typography key={item.name} variant="h6" className={`${classes.textStyle} cursor-pointer`}>{item.name}</Typography>)
+                        menuItems.map((item) => <Typography key={item.name} variant="h6" className={`${classes.textStyle} cursor-pointer`} onClick={(e) => handleRouteChange(e, item.url)}>{item.name}</Typography>)
                     }
                 </div>
             </div>

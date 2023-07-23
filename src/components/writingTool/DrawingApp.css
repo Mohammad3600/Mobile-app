@@ -1,0 +1,141 @@
+/* DrawingApp.css */
+
+.drawing-app-container {
+  display: flex;
+  width: 100vw; /* Use entire screen width */
+  height: 100vh; /* Use entire screen height */
+  gap: 10px;
+  padding: 20px;
+  max-width: max-content;
+  }
+  section {
+    background: #fff;
+    border-radius: 7px;
+  }
+  .tools-container {
+    width: 20%; /* Adjust the width of the tools board to 20% of the container */
+  height: auto;
+  padding: 15px 22px 0; /* Add background color to the tools container */
+  }
+  .tools-container .tools-list{
+    display: inline-block;
+    width: 120%;
+  }
+  .tools-list .options .option {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .option:is(:hover, .active) img {
+    filter: invert(17%) sepia(90%) saturate(3000%) hue-rotate(900deg) brightness(100%) contrast(100%);
+  }
+  .option :where(span, label) {
+    color: #5A6168;
+    cursor: pointer;
+    padding-left: 10px;
+  }
+  .option:is(:hover, .active) :where(span, label) {
+    color: #4A98F7;
+  }
+  .option #fill-color {
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+  }
+  .tools-list .options{
+    list-style: none;
+  margin: 10px 0 0 5px;
+  }
+
+  .options li img{
+    padding-right: 4%;
+  }
+
+  .tools-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .tool-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 30px; /* Increase the icon size for better visibility */
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .tool-btn.active {
+    color: #000;
+  }
+  
+  .options {
+    margin-top: 20px;
+  }
+  
+  .canvas-container {
+    flex: 1;
+    border: 1px solid black; /* Add the thin black border to the canvas container */
+    background-color: #fff; /* Add a white background to the canvas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .action-buttons {
+    margin-top: 20px;
+  }
+  
+  .action-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 10px;
+    color: #555;
+  }
+  
+  .action-btn:last-child {
+    margin-right: 0;
+  }
+
+  .canvas-container {
+    flex: 1;
+    border: 1px solid black;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Add position relative for absolute positioning of shapes */
+  }
+  
+  .modal-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for the modal */
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+  }
+  
+  .modal-content {
+    text-align: center;
+  }
+  
+  .modal-btn {
+    margin-top: 10px;
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .modal-btn:hover {
+    background-color: #333;
+  }
+  

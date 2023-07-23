@@ -1,8 +1,11 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-*{
-    margin: 0;
-    font-family: 'Poppins';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 .d-flex{
@@ -85,6 +88,67 @@
 
 #layout input{
   padding: 15px;
+}
+
+.app-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.canvas-container {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.canvas-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toolbar {
+  margin-bottom: 20px;
+}
+
+.toolbar button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.toolbar button:hover {
+  background-color: #e0e0e0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
+
+.app-title {
+  margin-top: 20px;
 }
 
 

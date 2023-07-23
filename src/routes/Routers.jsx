@@ -5,6 +5,7 @@ import Login from '../pages/Login'
 import Subjects from '../pages/Subjects'
 import PlayVideo from "../pages/PlayVideo"
 import ConceptsList from '../pages/ConceptsList'
+import DrawingApp from '../components/writingTool/DrawingApp'
 
 const Routers = () => {
   return (
@@ -20,6 +21,9 @@ const Routers = () => {
             </Route>
             <Route path={`${appURLS.PLAY}`} exact>
                 <PlayVideo />
+            </Route>
+            <Route path={`${appURLS.WORKSHEET}`} exact>
+                <DrawingApp />
             </Route>
             <Route exact path="*">
                 <Redirect to={appURLS.LOGIN} />
