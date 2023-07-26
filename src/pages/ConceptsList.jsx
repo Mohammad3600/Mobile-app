@@ -46,8 +46,8 @@ const ConceptsList = () => {
     const {subject} = useParams();
     const [videos, setVideos] = useState([]);
 
-    const onVideoClick = (video) => {
-        history.push(`${appURLS.PLAY}?video=${video}`);
+    const onVideoClick = (folder,file) => {
+        history.push(`${appURLS.PLAY}?video=videos/${subject}/${folder.name}/${file}`);
     }
 
   return (
@@ -66,7 +66,7 @@ const ConceptsList = () => {
         <>
             <Typography key={folder.name}  variant='h6' className='title red' mt={1}>{folder.name}</Typography>
             {
-                folder?.files?.map(file => <div className='list cursor-pointer' key={file}>
+                folder?.files?.map((file, index) => <div className='list cursor-pointer' key={`${file}-${index}`} onClick={()=> onVideoClick(folder,file)}>
                         <VideocamIcon style={{fontSize: "1.75rem"}} />
                         <Typography  variant='h6' className='title'>{file}</Typography>
                     </div>)
