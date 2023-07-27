@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5b09f023.css",
-    "main.js": "/static/js/main.1af86020.js",
+    "main.js": "/static/js/main.1bf56eb0.js",
     "static/js/738.ba70c191.chunk.js": "/static/js/738.ba70c191.chunk.js",
     "static/js/858.a0fa89f3.chunk.js": "/static/js/858.a0fa89f3.chunk.js",
     "static/js/572.67716344.chunk.js": "/static/js/572.67716344.chunk.js",
@@ -13,7 +13,12 @@
     "static/js/862.a4a2578e.chunk.js": "/static/js/862.a4a2578e.chunk.js",
     "static/js/886.c7679fe5.chunk.js": "/static/js/886.c7679fe5.chunk.js",
     "static/js/225.d9c4550f.chunk.js": "/static/js/225.d9c4550f.chunk.js",
+    "static/js/891.cde0c126.chunk.js": "/static/js/891.cde0c126.chunk.js",
+    "static/js/323.a6774a0f.chunk.js": "/static/js/323.a6774a0f.chunk.js",
+    "static/js/621.d9d10c0f.chunk.js": "/static/js/621.d9d10c0f.chunk.js",
     "static/js/377.7bc8251c.chunk.js": "/static/js/377.7bc8251c.chunk.js",
+    "static/media/What is chemical bonding.mp4": "/static/media/What is chemical bonding.458f73004ffb3046a6f1.mp4",
+    "static/media/Explain the shape of BRf5.mp4": "/static/media/Explain the shape of BRf5.b90da5fbcb26ebf5df5c.mp4",
     "static/media/chemistry.png": "/static/media/chemistry.1a4ae48c93a7e377cd54.png",
     "static/media/logo.svg": "/static/media/logo.d78c36c8a9e79f3476116a9db923a8a8.svg",
     "static/media/physics.png": "/static/media/physics.41d5806cf3e966c193bb.png",
@@ -30,7 +35,7 @@
     "static/media/triangle.svg": "/static/media/triangle.0a9a8ba15c9d3328d7f3a2b34c2e0d7c.svg",
     "static/media/circle.svg": "/static/media/circle.7cb39a9a1213b227711aedf63d9b46e0.svg",
     "main.5b09f023.css.map": "/static/css/main.5b09f023.css.map",
-    "main.1af86020.js.map": "/static/js/main.1af86020.js.map",
+    "main.1bf56eb0.js.map": "/static/js/main.1bf56eb0.js.map",
     "738.ba70c191.chunk.js.map": "/static/js/738.ba70c191.chunk.js.map",
     "858.a0fa89f3.chunk.js.map": "/static/js/858.a0fa89f3.chunk.js.map",
     "572.67716344.chunk.js.map": "/static/js/572.67716344.chunk.js.map",
@@ -46,6 +51,6 @@
   },
   "entrypoints": [
     "static/css/main.5b09f023.css",
-    "static/js/main.1af86020.js"
+    "static/js/main.1bf56eb0.js"
   ]
 }

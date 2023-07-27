@@ -26,7 +26,7 @@ const PlayVideo = () => {
     }, []);
 
   return (
-    <div key={video}>
+    <div key={video} style={{position: "fixed", left: 0, top: 0, zIndex: 150000, width: "100%", height: "100%", background: "#000"}}>
       
         <ReactPlayer
             config={{ file: { attributes: { controlsList: 'nodownload' } } }}
@@ -35,6 +35,7 @@ const PlayVideo = () => {
             width="100%"
             height="100%"
             controls
+            
             
         />
         {/* <Typography style={{wordBreak: "break-word"}} variant='h4'>{getVideoNameByPath(video)}</Typography> */}
